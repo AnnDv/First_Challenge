@@ -1,0 +1,167 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    width: 650px;
+    margin: 150px auto;
+    height: 490px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+}
+
+.img-parfume img{
+    width: 330px;
+}
+
+.category {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.product-title {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.img-description {
+    padding: 20px 50px 40px 30px;
+}
+
+.product-description p {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+    margin-bottom: 0%;
+}
+
+.prod-btn button{
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    padding: 12px 40px;
+    margin: 0;
+    font-size: 15px;
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    width: 240px;
+    border-style: solid;
+    font-weight: bold;
+}
+
+.prod-btn button img {
+    justify-self: end;
+}
+
+.prod-price {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'Fraunces', serif;
+}
+
+.prod-price .new-price-prod {
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+}
+
+.prod-price .old-price-prod {
+    align-self: center;
+    padding: 20px;
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+@media (min-width: 899px) {
+    .img-parfume .mobile-img {
+        display: none;
+        
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: max-content;
+        display: grid;
+        grid-template-areas: 
+        'image'
+        'description';
+        height: max-content;
+        grid-template-rows: repeat(2, 0.4fr);
+        grid-template-columns: 0.3fr;
+    }
+
+    .img-parfume .mobile-img {
+        width: 420px;
+    }
+
+    .img-parfume .desktop-img {
+        display: none;
+    }
+
+    .img-description {
+        grid-area: description;
+        padding: 20px 30px;
+    }
+
+    .img-description p {
+        font-size: 16.3px;
+    }
+
+    .category {
+        font-size: 15px;
+    }
+
+    .product-title {
+        font-size: 20px;
+    }
+
+    .product-description {
+        line-height: 1.7;
+        padding: 0 20px 0 0;
+    }
+
+    .prod-price {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .prod-price .new-price-prod p {
+        font-size: 40px;
+    }
+
+    .prod-price .old-price-prod p{
+        font-size: 15px;
+    }
+
+    .prod-btn button{
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        margin: 0 0;
+        font-size: 18px;
+        background-color: hsl(158, 36%, 37%);
+        padding: 18px 40px;
+        align-content: start;
+        
+        width: 350px;
+        border-style: solid;
+        font-weight: bold;
+    }
+
+    .prod-btn button img {
+        width: 20px;
+    }
+
+
+}

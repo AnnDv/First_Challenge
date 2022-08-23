@@ -82,16 +82,16 @@ body {
     text-decoration: line-through;
 }
 
-@media (min-width: 899px) {
+@media (min-width: 799px) {
     .img-parfume .mobile-img {
         display: none;
         
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     .container {
-        width: max-content;
+        width: 370px;
         display: grid;
         grid-template-areas: 
         'image'
@@ -102,7 +102,7 @@ body {
     }
 
     .img-parfume .mobile-img {
-        width: 420px;
+        width: 400px;
     }
 
     .img-parfume .desktop-img {
@@ -154,7 +154,7 @@ body {
         padding: 18px 40px;
         align-content: start;
         
-        width: 350px;
+        width: 320px;
         border-style: solid;
         font-weight: bold;
     }
